@@ -1,0 +1,69 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-a-sketch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="shell">
+        <header class="header">
+            <h1 class="title">Sketchy-Etch <i>Deluxe</i></h1>
+        </header>
+        <div class="main">
+          <div class="settings">
+              <input id="colorPicker" type="color" value="#333333" />
+              
+              <div id="colorBtn">
+              <button class="pushable">
+                <span class="shadow"></span>
+                <span class="edge"></span>
+                <span class="front">Color Mode</span></button>
+              </div>
+
+            <div id="rainbowBtn">
+              <button class="pushable">
+                <span class="shadow"></span>
+                <span class="edge"></span>
+                <span class="front">Rainbow Mode</span></button>
+            </div>
+
+            <div id="eraserBtn">
+              <button class="pushable">
+                <span class="shadow"></span>
+                <span class="edge"></span>
+                <span class="front">Eraser</span></button>
+            </div>
+
+            <div id="clearBtn">
+                <button class="pushable">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front">Clear</span></button>
+            </div>
+
+              <div id="sizeValue" class="size-value">16 x 16</div>
+              <input id="sizeSlider" type="range" value="16" min="1" max="64" />
+          </div>
+            
+            <div class="screen">
+                <div id="grid" class="grid"></div>
+          </div>
+
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
